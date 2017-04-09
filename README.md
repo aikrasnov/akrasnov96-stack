@@ -1,4 +1,4 @@
-# akrasnov96-stack
+# akrasnov96-stack [![Build Status](https://travis-ci.org/aikrasnov/akrasnov96-stack.svg?branch=master)](https://travis-ci.org/aikrasnov/akrasnov96-stack)
 Stack implementation in JS
 ## Установка
 ```bash
