@@ -1,0 +1,24 @@
+{
+  "name": "akrasnov96-stack",
+  "version": "0.0.1",
+  "description": "Лучшая реализация стека.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "test_rep"
+  },
+  "keywords": [
+    "akrasnov",
+    "stack",
+    "the_best"
+  ],
+  "author": "Alexander Krasnov, aleksander.krasnoff2013@ya.ru",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "power-assert": "^1.4.2"
+  }
+}
