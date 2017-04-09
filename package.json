@@ -1,6 +1,6 @@
 {
   "name": "akrasnov96-stack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Лучшая реализация стека.",
   "main": "index.js",
   "scripts": {
