@@ -1,10 +1,10 @@
 /**
  * Created by akrasnov96 on 04.04.17.
  */
-'use strict';
+
 
 const assert = require('power-assert');
-const Stack  = require('./index.js');
+const Stack = require('../index.js');
 
 
 describe('akrasnov96-stack', () => {
@@ -12,19 +12,19 @@ describe('akrasnov96-stack', () => {
         const stackInstance = new Stack();
 
         it('should have pop', () => {
-            assert(typeof stackInstance.pop === 'function')
+            assert(typeof stackInstance.pop === 'function');
         });
 
         it('should have push', () => {
-            assert(typeof stackInstance.push === 'function')
+            assert(typeof stackInstance.push === 'function');
         });
 
         it('should have peek', () => {
-            assert(typeof stackInstance.peek === 'function')
+            assert(typeof stackInstance.peek === 'function');
         });
 
         it('should have isEmpty', () => {
-            assert(typeof stackInstance.isEmpty === 'function')
+            assert(typeof stackInstance.isEmpty === 'function');
         });
 
     });
@@ -32,19 +32,19 @@ describe('akrasnov96-stack', () => {
     describe('isEmpty', () => {
         it('should return true', () => {
             const stack = new Stack();
-            assert(stack.isEmpty())
+            assert(stack.isEmpty());
         });
 
         it('should return false', () => {
             const stack = new Stack();
             stack.push(1);
-            assert(!stack.isEmpty())
+            assert(!stack.isEmpty());
         });
     });
 
     describe('push', () => {
         it('should add item', () => {
-            let item  = 666;
+            const item = 666;
             const stack = new Stack();
 
             assert(stack.isEmpty());
@@ -55,17 +55,16 @@ describe('akrasnov96-stack', () => {
 
     describe('pop', () => {
         it('should return item', () => {
-            let result;
-            let item  = 666;
+            const item = 666;
             const stack = new Stack(item);
 
             assert(!stack.isEmpty());
-            result = stack.pop();
+            const result = stack.pop();
             assert(result === item);
         });
 
         it('should del item', () => {
-            let item  = 666;
+            const item = 666;
             const stack = new Stack(item);
 
             assert(!stack.isEmpty());
@@ -76,10 +75,10 @@ describe('akrasnov96-stack', () => {
 
     describe('peek', () => {
         it('should return last item', () => {
-            let items  = [1, 2, 3, 4, 5];
+            const items = [1, 2, 3, 4, 5];
             const stack = new Stack(...items);
 
-            for (let i = items.length-1; i >= 0; i--) {
+            for (let i = items.length - 1; i >= 0; i--) {
                 assert(stack.peek() === items[i]);
                 stack.pop();
             }

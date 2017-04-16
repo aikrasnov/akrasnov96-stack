@@ -3,13 +3,12 @@
  *
  */
 
-'use strict';
 
 class Stack {
-    constructor (...array) {
+    constructor(...array) {
         this._data = [];
         if (array.toString()) {
-            for (let item of array) {
+            for (const item of array) {
                 this._data.push(item);
             }
         }
@@ -24,7 +23,7 @@ class Stack {
     }
 
     peek() {
-        return this._data.length-1 >= 0 ? this._data[this._data.length-1] : null;
+        return this._data.length - 1 >= 0 ? this._data[this._data.length - 1] : null;
     }
 
     isEmpty() {
