@@ -1,9 +1,11 @@
 # akrasnov96-stack [![Build Status](https://travis-ci.org/aikrasnov/akrasnov96-stack.svg?branch=master)](https://travis-ci.org/aikrasnov/akrasnov96-stack)
 Stack implementation in JS
+
 ## Установка
 ```bash
-npm install akrasnov96-stack
+npm install akrasnov96-stack --save
 ```
+
 ## Использование
 ```javasript
 const Stack = require('akrasnov96-stack');
